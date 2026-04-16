@@ -1454,7 +1454,7 @@ button {
 
 /* --- Contact Footer (unified) --- */
 .contact-footer {
-  background: var(--color-foreground);
+  background: var(--color-primary-dark);
   color: rgba(255,255,255,0.7);
   padding: var(--space-5xl) 0 var(--space-xl);
 }
@@ -1567,11 +1567,11 @@ button {
 
 /* Contact Form (dark theme) */
 .contact-form-footer {
-  background: rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.08);
   padding: var(--space-2xl);
   border-radius: var(--radius-xl);
   box-shadow: none;
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
 }
 
 .contact-form-footer .form-group label {
@@ -1599,7 +1599,7 @@ button {
 }
 
 .contact-form-footer .form-group select option {
-  background: var(--color-foreground);
+  background: var(--color-primary-dark);
   color: #fff;
 }
 

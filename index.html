@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apartamentos Caracol | El Hierro - Islas Canarias</title>
+  <meta name="description" content="Apartamentos vacacionales en El Pinar, Isla de El Hierro. Vistas al mar, naturaleza y tranquilidad en la Reserva de la Biosfera UNESCO.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-spiral"></div>
+      <span class="preloader-text">Caracol</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="https://elcaracol.es/wp-content/uploads/2023/03/Diseno-sin-titulo.png" alt="Caracol El Hierro Logo" width="50" height="50">
+        <span class="logo-text">Caracol</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active" data-i18n="nav.home">Inicio</a>
+        <a href="#island" class="nav-link" data-i18n="nav.island">La Isla</a>
+        <a href="#apartments" class="nav-link" data-i18n="nav.apartments">Apartamentos</a>
+        <a href="#activities" class="nav-link" data-i18n="nav.activities">Actividades</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">Sobre Nosotros</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="es" aria-label="Español">ES</button>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-btn" data-lang="de" aria-label="Deutsch">DE</button>
+        </div>
+        <a href="https://wa.link/uniuud" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-nav" data-i18n="nav.book">Reservar</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-slider">
+      <div class="hero-slide active" style="background-image: url('https://elcaracol.es/wp-content/uploads/2025/01/laisla-10-scaled-600x450-1.jpg')"></div>
+      <div class="hero-slide" style="background-image: url('https://elcaracol.es/wp-content/uploads/2025/01/laisla-6-scaled-600x450-1.jpg')"></div>
+      <div class="hero-slide" style="background-image: url('https://elcaracol.es/wp-content/uploads/2025/01/laisla-1-scaled-600x450-1.jpg')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge" data-i18n="hero.badge">Reserva de la Biosfera UNESCO</span>
+      <h1 class="hero-title">
+        <span class="hero-title-line" data-i18n="hero.title1">Apartamentos Caracol</span>
+        <span class="hero-title-accent" data-i18n="hero.title2">El Pinar, Isla de El Hierro</span>
+      </h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Nuestra finca est&aacute; situada en la ladera suroeste en la zona m&aacute;s alta y tranquila de El Pinar, con maravillosas vistas de La Gomera y El Teide en Tenerife.</p>
+      <div class="hero-ctas">
+        <a href="#apartments" class="btn btn-primary btn-lg" data-i18n="hero.cta1">Explorar Apartamentos</a>
+        <a href="https://wa.link/uniuud" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg" data-i18n="hero.cta2">Reservar Ahora</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span data-i18n="hero.scroll">Descubrir</span>
+    </div>
+  </section>
+
+  <!-- Island Section -->
+  <section id="island" class="section island-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="island.tag">Descubre</span>
+        <h2 class="section-title" data-i18n="island.title">La Isla de El Hierro</h2>
+        <p class="section-subtitle" data-i18n="island.subtitle">Esta s&eacute;ptima isla siempre ha estado excluida del turismo convencional. La UNESCO la ha declarado reserva de la biosfera. Un para&iacute;so para los amantes de la naturaleza, senderistas, buceadores y quienes buscan paz y tranquilidad.</p>
+      </div>
+
+      <div class="island-grid">
+        <div class="island-card island-card-large">
+          <div class="island-card-img">
+            <img src="https://elcaracol.es/wp-content/uploads/2025/01/laisla-15-scaled-600x450-1-400x300.jpg" alt="Paisaje volcánico de El Hierro" loading="lazy" width="600" height="450">
+          </div>
+          <div class="island-card-content">
+            <h3 data-i18n="island.card1.title">Paisajes Volc&aacute;nicos</h3>
+            <p data-i18n="island.card1.text">278 km&sup2; de terreno diverso: &aacute;ridos lajiares y formaciones volc&aacute;nicas en el sur, f&eacute;rtiles valles con vi&ntilde;edos y huertos.</p>
+          </div>
+        </div>
+        <div class="island-card">
+          <div class="island-card-img">
+            <img src="https://elcaracol.es/wp-content/uploads/2025/01/laisla-5-scaled-600x450-1-400x300.jpg" alt="Bosques de El Hierro" loading="lazy" width="400" height="300">
+          </div>
+          <div class="island-card-content">
+            <h3 data-i18n="island.card2.title">Bosques Milenarios</h3>
+            <p data-i18n="island.card2.text">Densos pinares canarios y bosques de laurisilva en la zona central de la isla.</p>
+          </div>
+        </div>
+        <div class="island-card">
+          <div class="island-card-img">
+            <img src="https://elcaracol.es/wp-content/uploads/2025/01/laisla-3-scaled-600x450-1-400x300.jpg" alt="Costa de El Hierro" loading="lazy" width="400" height="300">
+          </div>
+          <div class="island-card-content">
+            <h3 data-i18n="island.card3.title">Costas Espectaculares</h3>
+            <p data-i18n="island.card3.text">Acantilados de hasta 1.000 metros, calas y piscinas naturales que invitan a refrescarse.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Island Gallery -->
+      <div class="island-gallery">
+        <div class="gallery-track">
+          <img src="https://elcaracol.es/wp-content/uploads/2025/01/laisla-2-scaled-600x450-1-400x300.jpg" alt="El Hierro paisaje" loading="lazy" width="400" height="300">
+          <img src="https://elcaracol.es/wp-content/uploads/2025/01/laisla-4-scaled-600x450-1-400x300.jpg" alt="El Hierro naturaleza" loading="lazy" width="400" height="300">
+          <img src="https://elcaracol.es/wp-content/uploads/2025/01/laisla-6-scaled-600x450-1-400x300.jpg" alt="El Hierro costa" loading="lazy" width="400" height="300">
+          <img src="https://elcaracol.es/wp-content/uploads/2025/01/laisla-7-scaled-600x450-1-400x300.jpg" alt="El Hierro bosque" loading="lazy" width="400" height="300">
+          <img src="https://elcaracol.es/wp-content/uploads/2025/01/laisla-8-scaled-600x450-1-400x300.jpg" alt="El Hierro piscina natural" loading="lazy" width="400" height="300">
+          <img src="https://elcaracol.es/wp-content/uploads/2025/01/laisla-9-scaled-600x450-1-400x300.jpg" alt="El Hierro atardecer" loading="lazy" width="400" height="300">
+          <img src="https://elcaracol.es/wp-content/uploads/2025/01/laisla-10-scaled-600x450-1-400x300.jpg" alt="El Hierro mirador" loading="lazy" width="400" height="300">
+          <img src="https://elcaracol.es/wp-content/uploads/2025/01/laisla-11-scaled-600x450-1-400x300.jpg" alt="El Hierro volcán" loading="lazy" width="400" height="300">
+          <img src="https://elcaracol.es/wp-content/uploads/2025/01/laisla-12-scaled-600x450-1-400x300.jpg" alt="El Hierro pueblo" loading="lazy" width="400" height="300">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apartments Section -->
+  <section id="apartments" class="section apartments-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="apartments.tag">Alojamiento</span>
+        <h2 class="section-title" data-i18n="apartments.title">Nuestros Apartamentos</h2>
+        <p class="section-subtitle" data-i18n="apartments.subtitle">En esta secci&oacute;n encontrar&aacute; fotos e informaci&oacute;n sobre nuestros apartamentos. Cada uno ofrece vistas al mar, terraza privada y todo lo necesario para una estancia perfecta.</p>
+      </div>
+
+      <div class="apartments-grid">
+        <!-- Caracol 1 -->
+        <div class="apt-card" data-apartment="1">
+          <div class="apt-card-img">
+            <img src="https://elcaracol.es/wp-content/uploads/2025/01/elcaracol1-9-scaled-1-1067x800.jpg" alt="Caracol 1 - Apartamento" loading="lazy" width="1067" height="800">
+            <div class="apt-card-badge">Caracol 1</div>
+          </div>
+          <div class="apt-card-body">
+            <h3 class="apt-card-title">Caracol 1</h3>
+            <p class="apt-card-desc" data-i18n="apartments.desc">Estudio con vistas al mar y una terraza &iacute;ntima. Cocina, ba&ntilde;o con agua caliente solar, WiFi y terraza con amplias vistas al mar y las monta&ntilde;as.</p>
+            <div class="apt-card-features">
+              <div class="apt-feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                <span>2 <span data-i18n="apartments.guests">hu&eacute;spedes</span></span>
+              </div>
+              <div class="apt-feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7v11a2 2 0 002 2h14a2 2 0 002-2V7"/><path d="M21 7H3l2-4h14l2 4z"/></svg>
+                <span>1 <span data-i18n="apartments.bedroom">dormitorio</span></span>
+              </div>
+              <div class="apt-feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11L2 12v6a2 2 0 002 2h16a2 2 0 002-2v-6l-3.45-6.89A2 2 0 0016.76 4H7.24a2 2 0 00-1.79 1.11z"/></svg>
+                <span>1 <span data-i18n="apartments.bathroom">ba&ntilde;o</span></span>
+              </div>
+            </div>
+            <div class="apt-amenities">
+              <span class="amenity" data-i18n="amenities.wifi">WiFi</span>
+              <span class="amenity" data-i18n="amenities.kitchen">Cocina</span>
+              <span class="amenity" data-i18n="amenities.heating">Calefacci&oacute;n</span>
+              <span class="amenity" data-i18n="amenities.terrace">Terraza</span>
+            </div>
+            <a href="https://wa.link/uniuud" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block" data-i18n="apartments.book">Consultar Disponibilidad</a>
+          </div>
+        </div>
+
+        <!-- Caracol 3 -->
+        <div class="apt-card" data-apartment="3">
+          <div class="apt-card-img">
+            <img src="https://elcaracol.es/wp-content/uploads/2025/01/elcaracol3-3-scaled-1-1067x800.jpg" alt="Caracol 3 - Apartamento" loading="lazy" width="1067" height="800">
+            <div class="apt-card-badge">Caracol 3</div>
+          </div>
+          <div class="apt-card-body">
+            <h3 class="apt-card-title">Caracol 3</h3>
+            <p class="apt-card-desc" data-i18n="apartments.desc">Estudio con vistas al mar y una terraza &iacute;ntima. Cocina, ba&ntilde;o con agua caliente solar, WiFi y terraza con amplias vistas al mar y las monta&ntilde;as.</p>
+            <div class="apt-card-features">
+              <div class="apt-feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                <span>2 <span data-i18n="apartments.guests">hu&eacute;spedes</span></span>
+              </div>
+              <div class="apt-feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7v11a2 2 0 002 2h14a2 2 0 002-2V7"/><path d="M21 7H3l2-4h14l2 4z"/></svg>
+                <span>1 <span data-i18n="apartments.bedroom">dormitorio</span></span>
+              </div>
+              <div class="apt-feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11L2 12v6a2 2 0 002 2h16a2 2 0 002-2v-6l-3.45-6.89A2 2 0 0016.76 4H7.24a2 2 0 00-1.79 1.11z"/></svg>
+                <span>1 <span data-i18n="apartments.bathroom">ba&ntilde;o</span></span>
+              </div>
+            </div>
+            <div class="apt-amenities">
+              <span class="amenity" data-i18n="amenities.wifi">WiFi</span>
+              <span class="amenity" data-i18n="amenities.kitchen">Cocina</span>
+              <span class="amenity" data-i18n="amenities.heating">Calefacci&oacute;n</span>
+              <span class="amenity" data-i18n="amenities.terrace">Terraza</span>
+            </div>
+            <a href="https://wa.link/uniuud" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block" data-i18n="apartments.book">Consultar Disponibilidad</a>
+          </div>
+        </div>
+
+        <!-- Caracol 4 -->
+        <div class="apt-card" data-apartment="4">
+          <div class="apt-card-img">
+            <img src="https://elcaracol.es/wp-content/uploads/2025/01/elcaracol4-15-scaled-1-1067x800.jpg" alt="Caracol 4 - Apartamento" loading="lazy" width="1067" height="800">
+            <div class="apt-card-badge">Caracol 4</div>
+          </div>
+          <div class="apt-card-body">
+            <h3 class="apt-card-title">Caracol 4</h3>
+            <p class="apt-card-desc" data-i18n="apartments.desc">Estudio con vistas al mar y una terraza &iacute;ntima. Cocina, ba&ntilde;o con agua caliente solar, WiFi y terraza con amplias vistas al mar y las monta&ntilde;as.</p>
+            <div class="apt-card-features">
+              <div class="apt-feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                <span>2 <span data-i18n="apartments.guests">hu&eacute;spedes</span></span>
+              </div>
+              <div class="apt-feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7v11a2 2 0 002 2h14a2 2 0 002-2V7"/><path d="M21 7H3l2-4h14l2 4z"/></svg>
+                <span>1 <span data-i18n="apartments.bedroom">dormitorio</span></span>
+              </div>
+              <div class="apt-feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11L2 12v6a2 2 0 002 2h16a2 2 0 002-2v-6l-3.45-6.89A2 2 0 0016.76 4H7.24a2 2 0 00-1.79 1.11z"/></svg>
+                <span>1 <span data-i18n="apartments.bathroom">ba&ntilde;o</span></span>
+              </div>
+            </div>
+            <div class="apt-amenities">
+              <span class="amenity" data-i18n="amenities.wifi">WiFi</span>
+              <span class="amenity" data-i18n="amenities.kitchen">Cocina</span>
+              <span class="amenity" data-i18n="amenities.heating">Calefacci&oacute;n</span>
+              <span class="amenity" data-i18n="amenities.terrace">Terraza</span>
+            </div>
+            <a href="https://wa.link/uniuud" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block" data-i18n="apartments.book">Consultar Disponibilidad</a>
+          </div>
+        </div>
+
+        <!-- Caracol 5 -->
+        <div class="apt-card" data-apartment="5">
+          <div class="apt-card-img">
+            <img src="https://elcaracol.es/wp-content/uploads/2025/01/elcaracol5-2-scaled-2-1067x800.jpg" alt="Caracol 5 - Apartamento" loading="lazy" width="1067" height="800">
+            <div class="apt-card-badge">Caracol 5</div>
+          </div>
+          <div class="apt-card-body">
+            <h3 class="apt-card-title">Caracol 5</h3>
+            <p class="apt-card-desc" data-i18n="apartments.desc">Estudio con vistas al mar y una terraza &iacute;ntima. Cocina, ba&ntilde;o con agua caliente solar, WiFi y terraza con amplias vistas al mar y las monta&ntilde;as.</p>
+            <div class="apt-card-features">
+              <div class="apt-feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                <span>2 <span data-i18n="apartments.guests">hu&eacute;spedes</span></span>
+              </div>
+              <div class="apt-feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7v11a2 2 0 002 2h14a2 2 0 002-2V7"/><path d="M21 7H3l2-4h14l2 4z"/></svg>
+                <span>1 <span data-i18n="apartments.bedroom">dormitorio</span></span>
+              </div>
+              <div class="apt-feature">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11L2 12v6a2 2 0 002 2h16a2 2 0 002-2v-6l-3.45-6.89A2 2 0 0016.76 4H7.24a2 2 0 00-1.79 1.11z"/></svg>
+                <span>1 <span data-i18n="apartments.bathroom">ba&ntilde;o</span></span>
+              </div>
+            </div>
+            <div class="apt-amenities">
+              <span class="amenity" data-i18n="amenities.wifi">WiFi</span>
+              <span class="amenity" data-i18n="amenities.kitchen">Cocina</span>
+              <span class="amenity" data-i18n="amenities.heating">Calefacci&oacute;n</span>
+              <span class="amenity" data-i18n="amenities.terrace">Terraza</span>
+            </div>
+            <a href="https://wa.link/uniuud" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block" data-i18n="apartments.book">Consultar Disponibilidad</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Amenities Highlight -->
+      <div class="amenities-showcase">
+        <h3 class="amenities-title" data-i18n="amenities.title">Lo que incluimos</h3>
+        <div class="amenities-grid">
+          <div class="amenity-item">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0114.08 0"/><path d="M1.42 9a16 16 0 0121.16 0"/><path d="M8.53 16.11a6 6 0 016.95 0"/><circle cx="12" cy="20" r="1"/></svg>
+            <span data-i18n="amenities.wifi">WiFi</span>
+          </div>
+          <div class="amenity-item">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <span data-i18n="amenities.solar">Agua caliente solar</span>
+          </div>
+          <div class="amenity-item">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            <span data-i18n="amenities.coffee">Cafetera</span>
+          </div>
+          <div class="amenity-item">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 00-8 0v2"/></svg>
+            <span data-i18n="amenities.towels">Toallas y ropa de cama</span>
+          </div>
+          <div class="amenity-item">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            <span data-i18n="amenities.washer">Lavadora</span>
+          </div>
+          <div class="amenity-item">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span data-i18n="amenities.terrace">Terraza privada</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Check-in Info -->
+      <div class="checkin-info">
+        <div class="checkin-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div>
+            <strong>Check-in:</strong> <span data-i18n="apartments.checkin">Desde las 15:00</span>
+          </div>
+        </div>
+        <div class="checkin-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div>
+            <strong>Check-out:</strong> <span data-i18n="apartments.checkout">Hasta las 12:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities Section -->
+  <section id="activities" class="section activities-section">
+    <div class="container">
+      <div class="activities-layout">
+        <div class="activities-content">
+          <span class="section-tag" data-i18n="activities.tag">Experiencia</span>
+          <h2 class="section-title" data-i18n="activities.title">El Vino</h2>
+          <p class="activities-text" data-i18n="activities.text">Nuestro vi&ntilde;edo est&aacute; situado al pie de los llanos. Las uvas se recogen, estrujan y maceran seg&uacute;n los m&eacute;todos tradicionales canarios. El &laquo;vino de pata de cabra&raquo; reposa en sus barricas en la bodega y le invita a degustarlo.</p>
+          <div class="activities-features">
+            <div class="act-feature">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4-4 4"/><path d="M3 12h18"/></svg>
+              <span data-i18n="activities.feat1">M&eacute;todos tradicionales canarios</span>
+            </div>
+            <div class="act-feature">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4-4 4"/><path d="M3 12h18"/></svg>
+              <span data-i18n="activities.feat2">Degustaci&oacute;n en bodega propia</span>
+            </div>
+            <div class="act-feature">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4-4 4"/><path d="M3 12h18"/></svg>
+              <span data-i18n="activities.feat3">Vino de pata de cabra</span>
+            </div>
+          </div>
+          <a href="https://wa.link/uniuud" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="activities.cta">Cont&aacute;ctenos</a>
+        </div>
+        <div class="activities-image">
+          <img src="https://elcaracol.es/wp-content/uploads/2025/01/uva5.jpg" alt="Viñedo en El Hierro" loading="lazy" width="800" height="600">
+          <div class="activities-image-accent"></div>
+        </div>
+      </div>
+
+      <!-- Hiking & Nature -->
+      <div class="nature-strip">
+        <div class="nature-item">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <h4 data-i18n="nature.hiking">Senderismo</h4>
+          <p data-i18n="nature.hiking.desc">Rutas de senderismo en todas direcciones a trav&eacute;s del pinar canario.</p>
+        </div>
+        <div class="nature-item">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <h4 data-i18n="nature.biking">Mountain Bike</h4>
+          <p data-i18n="nature.biking.desc">Un verdadero desaf&iacute;o para ciclistas de monta&ntilde;a y entusiastas del senderismo.</p>
+        </div>
+        <div class="nature-item">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+          <h4 data-i18n="nature.diving">Buceo</h4>
+          <p data-i18n="nature.diving.desc">Aguas cristalinas ideales para explorar la vida marina de El Hierro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-image-wrapper">
+          <img src="https://elcaracol.es/wp-content/uploads/2025/01/IMG_20170330_172208-scaled-600x800-1.jpg" alt="Pablo - Propietario de Caracol El Hierro" loading="lazy" width="600" height="800">
+          <div class="about-image-frame"></div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag" data-i18n="about.tag">Nuestra Historia</span>
+          <h2 class="section-title" data-i18n="about.title">Bienvenidos a Caracol El Hierro</h2>
+          <p class="about-text" data-i18n="about.text1">Hola, me llamo Pablo. Mis padres me trajeron desde Alemania a esta maravillosa isla en 1982 cuando ten&iacute;a un a&ntilde;o. Tras estudiar psicolog&iacute;a y seguridad laboral, regres&eacute; en 2010.</p>
+          <p class="about-text" data-i18n="about.text2">Tras el fallecimiento de mi madre en 2016, me dediqu&eacute; a preservar y mejorar su gran legado para que nuestros hu&eacute;spedes puedan disfrutar de una excelente estancia.</p>
+          <p class="about-text" data-i18n="about.text3">Hoy me esfuerzo por preservar y mejorar el gran legado de mi madre para que nuestros hu&eacute;spedes puedan disfrutar de una excelente estancia.</p>
+          <div class="about-signature">
+            <span class="signature-name">Pablo</span>
+            <span class="signature-role" data-i18n="about.role">Propietario & Anfitri&oacute;n</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transport Section -->
+  <section class="section transport-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="transport.tag">C&oacute;mo llegar</span>
+        <h2 class="section-title" data-i18n="transport.title">Transporte</h2>
+      </div>
+      <div class="transport-grid">
+        <a href="https://www.navieraarmas.com" target="_blank" rel="noopener noreferrer" class="transport-card">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20l.84-2.52c.38-1.13 1.27-2.03 2.4-2.42L12 13l6.76 2.06c1.13.39 2.02 1.29 2.4 2.42L22 20"/><path d="M6.5 7c1-2 3-3 5.5-3s4.5 1 5.5 3l1 2H5.5l1-2z"/><path d="M4 13h16"/></svg>
+          <h4 data-i18n="transport.sea">Transporte Mar&iacute;timo</h4>
+          <span>Naviera Armas</span>
+        </a>
+        <a href="https://www.bintercanarias.com" target="_blank" rel="noopener noreferrer" class="transport-card">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+          <h4 data-i18n="transport.air">Transporte A&eacute;reo</h4>
+          <span>Binter Canarias</span>
+        </a>
+        <a href="https://www.transhierro.com" target="_blank" rel="noopener noreferrer" class="transport-card">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          <h4 data-i18n="transport.local">Transporte Local</h4>
+          <span>TransHierro</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <span class="section-tag" data-i18n="contact.tag">Contacto</span>
+          <h2 class="section-title" data-i18n="contact.title">Cont&aacute;ctenos</h2>
+          <p class="contact-text" data-i18n="contact.subtitle">Si tiene alguna pregunta o desea hacer una reserva, no dude en contactarnos.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong data-i18n="contact.address.label">Direcci&oacute;n</strong>
+                <p>C/El Chamorro n&ordm; 55 E<br>38914 &ndash; El Pinar / El Hierro</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              <div>
+                <strong data-i18n="contact.phone.label">Tel&eacute;fono</strong>
+                <a href="tel:+34669816250">+34 669 816 250</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.link/uniuud" target="_blank" rel="noopener noreferrer" data-i18n="contact.whatsapp">Env&iacute;anos un mensaje</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name" data-i18n="contact.form.name">Nombre</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="email" data-i18n="contact.form.email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkin" data-i18n="contact.form.checkin">Llegada</label>
+              <input type="date" id="checkin" name="checkin">
+            </div>
+            <div class="form-group">
+              <label for="checkout" data-i18n="contact.form.checkout">Salida</label>
+              <input type="date" id="checkout" name="checkout">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="apartment" data-i18n="contact.form.apartment">Apartamento</label>
+            <select id="apartment" name="apartment">
+              <option value="" data-i18n="contact.form.select">Seleccionar...</option>
+              <option value="caracol1">Caracol 1</option>
+              <option value="caracol3">Caracol 3</option>
+              <option value="caracol4">Caracol 4</option>
+              <option value="caracol5">Caracol 5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="contact.form.message">Mensaje</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.form.submit">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="https://elcaracol.es/wp-content/uploads/2023/03/Diseno-sin-titulo.png" alt="Caracol El Hierro Logo" width="60" height="60">
+          <span class="footer-brand-name">Caracol El Hierro</span>
+          <p class="footer-tagline" data-i18n="footer.tagline">Apartamentos vacacionales en la Isla de El Hierro</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer.nav">Navegaci&oacute;n</h4>
+          <a href="#hero" data-i18n="nav.home">Inicio</a>
+          <a href="#island" data-i18n="nav.island">La Isla</a>
+          <a href="#apartments" data-i18n="nav.apartments">Apartamentos</a>
+          <a href="#activities" data-i18n="nav.activities">Actividades</a>
+          <a href="#contact" data-i18n="nav.contact">Contacto</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer.transport">Transporte</h4>
+          <a href="https://www.navieraarmas.com" target="_blank" rel="noopener noreferrer">Naviera Armas</a>
+          <a href="https://www.bintercanarias.com" target="_blank" rel="noopener noreferrer">Binter Canarias</a>
+          <a href="https://www.transhierro.com" target="_blank" rel="noopener noreferrer">TransHierro</a>
+        </div>
+        <div class="footer-contact">
+          <h4 data-i18n="footer.contactus">Contacto</h4>
+          <p>C/El Chamorro n&ordm; 55 E<br>38914 El Pinar / El Hierro</p>
+          <a href="tel:+34669816250">+34 669 816 250</a>
+          <a href="https://wa.link/uniuud" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Apartamentos Caracol El Hierro. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.link/uniuud" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

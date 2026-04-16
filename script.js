@@ -296,9 +296,7 @@ function setLanguage(lang) {
 // ─── Preloader ───
 window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
-  setTimeout(() => {
-    preloader.classList.add('hidden');
-  }, 600);
+  preloader.classList.add('hidden');
 
   // Init language
   setLanguage(currentLang);
@@ -495,18 +493,21 @@ document.querySelectorAll('.apt-card-gallery').forEach(gallery => {
 
   thumbs.forEach(thumb => {
     thumb.addEventListener('click', () => {
-      mainImg.src = thumb.src;
+      // Use mid-size for card display
+      mainImg.src = thumb.dataset.mid || thumb.src;
+      mainImg.dataset.full = thumb.dataset.full || thumb.src;
       thumbs.forEach(t => t.classList.remove('active'));
       thumb.classList.add('active');
     });
   });
 
-  // Click main image or expand button opens lightbox
+  // Click main image or expand button opens lightbox with full-res images
   const expandBtn = gallery.querySelector('.apt-expand-btn');
   const openLightbox = () => {
-    const allImgs = [mainImg.src];
+    const allImgs = [mainImg.dataset.full || mainImg.src];
     thumbs.forEach(t => {
-      if (!allImgs.includes(t.src)) allImgs.push(t.src);
+      const fullSrc = t.dataset.full || t.src;
+      if (!allImgs.includes(fullSrc)) allImgs.push(fullSrc);
     });
     showLightbox(allImgs, 0);
   };

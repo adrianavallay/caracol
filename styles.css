@@ -1494,7 +1494,13 @@ button {
 .contact-info-footer {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 2.5rem;
+}
+
+.contact-info-footer .contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .contact-item-footer {

@@ -1494,7 +1494,7 @@ button {
 .contact-info-footer {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xl);
+  gap: var(--space-2xl);
 }
 
 .contact-item-footer {

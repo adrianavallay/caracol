@@ -487,3 +487,121 @@ if (galleryTrack) {
   const images = galleryTrack.innerHTML;
   galleryTrack.innerHTML = images + images;
 }
+
+// ─── Apartment Thumbnail Gallery ───
+document.querySelectorAll('.apt-card-gallery').forEach(gallery => {
+  const mainImg = gallery.querySelector('.apt-main-img img');
+  const thumbs = gallery.querySelectorAll('.apt-thumb');
+
+  thumbs.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      mainImg.src = thumb.src;
+      thumbs.forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+    });
+  });
+
+  // Click main image or expand button opens lightbox
+  const expandBtn = gallery.querySelector('.apt-expand-btn');
+  const openLightbox = () => {
+    const allImgs = [mainImg.src];
+    thumbs.forEach(t => {
+      if (!allImgs.includes(t.src)) allImgs.push(t.src);
+    });
+    showLightbox(allImgs, 0);
+  };
+
+  mainImg.addEventListener('click', openLightbox);
+  if (expandBtn) expandBtn.addEventListener('click', openLightbox);
+});
+
+// ─── Lightbox ───
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxCurrent = document.getElementById('lightboxCurrent');
+const lightboxTotal = document.getElementById('lightboxTotal');
+const lightboxThumbs = document.getElementById('lightboxThumbs');
+let lightboxImages = [];
+let lightboxIndex = 0;
+
+function showLightbox(images, startIndex) {
+  lightboxImages = images;
+  lightboxIndex = startIndex;
+  lightboxTotal.textContent = images.length;
+
+  // Build thumbs
+  lightboxThumbs.innerHTML = '';
+  images.forEach((src, i) => {
+    const thumb = document.createElement('img');
+    thumb.src = src;
+    thumb.alt = `Foto ${i + 1}`;
+    thumb.addEventListener('click', () => goToSlide(i));
+    lightboxThumbs.appendChild(thumb);
+  });
+
+  goToSlide(startIndex);
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function goToSlide(index) {
+  lightboxIndex = index;
+  lightboxImg.src = lightboxImages[index];
+  lightboxCurrent.textContent = index + 1;
+
+  // Update thumb active states
+  const thumbs = lightboxThumbs.querySelectorAll('img');
+  thumbs.forEach((t, i) => t.classList.toggle('active', i === index));
+
+  // Scroll active thumb into view
+  if (thumbs[index]) {
+    thumbs[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  }
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function lightboxPrev() {
+  goToSlide(lightboxIndex <= 0 ? lightboxImages.length - 1 : lightboxIndex - 1);
+}
+
+function lightboxNext() {
+  goToSlide(lightboxIndex >= lightboxImages.length - 1 ? 0 : lightboxIndex + 1);
+}
+
+// Lightbox controls
+lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+lightbox.querySelector('.lightbox-prev').addEventListener('click', lightboxPrev);
+lightbox.querySelector('.lightbox-next').addEventListener('click', lightboxNext);
+
+// Click backdrop to close
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox || e.target.classList.contains('lightbox-content')) {
+    closeLightbox();
+  }
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+  if (!lightbox.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') lightboxPrev();
+  if (e.key === 'ArrowRight') lightboxNext();
+});
+
+// Touch swipe for lightbox
+let touchStartX = 0;
+lightbox.addEventListener('touchstart', (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+}, { passive: true });
+
+lightbox.addEventListener('touchend', (e) => {
+  const diff = e.changedTouches[0].screenX - touchStartX;
+  if (Math.abs(diff) > 50) {
+    if (diff > 0) lightboxPrev();
+    else lightboxNext();
+  }
+}, { passive: true });

@@ -42,7 +42,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="image" href="assets/img/laisla-6-scaled-1-1067x800.jpg" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="styles.css?v=10">
 
   <!-- Structured Data: LodgingBusiness -->
   <script type="application/ld+json">
@@ -126,6 +126,7 @@
         <a href="#island" class="nav-link" data-i18n="nav.island">La Isla</a>
         <a href="#apartments" class="nav-link" data-i18n="nav.apartments">Apartamentos</a>
         <a href="#activities" class="nav-link" data-i18n="nav.activities">Actividades</a>
+        <a href="#giftcard" class="nav-link" data-i18n="nav.giftcard">Tarjeta Regalo</a>
         <a href="#about" class="nav-link" data-i18n="nav.about">Sobre Nosotros</a>
         <a href="#contact" class="nav-link" data-i18n="nav.contact">Contacto</a>
       </nav>
@@ -593,6 +594,89 @@
     </div>
   </section>
 
+  <!-- Gift Card Section -->
+  <section id="giftcard" class="section giftcard-section">
+    <div class="giftcard-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="giftcard.tag">Regala una experiencia</span>
+        <h2 class="section-title" data-i18n="giftcard.title">Tarjeta Regalo</h2>
+        <p class="section-subtitle giftcard-subtitle" data-i18n="giftcard.subtitle">Regala una estancia inolvidable en El Hierro. Elige un importe, personaliza tu mensaje y nosotros nos encargamos del resto.</p>
+      </div>
+
+      <div class="giftcard-layout">
+        <!-- Live Preview -->
+        <div class="giftcard-preview-wrap">
+          <div class="giftcard-card" id="giftcardPreview">
+            <div class="giftcard-card-shine" aria-hidden="true"></div>
+            <div class="giftcard-card-top">
+              <img src="assets/img/logo.png" alt="Caracol El Hierro" class="giftcard-logo">
+              <span class="giftcard-chip" aria-hidden="true"></span>
+            </div>
+            <div class="giftcard-card-mid">
+              <span class="giftcard-label" data-i18n="giftcard.card.label">Tarjeta Regalo</span>
+              <span class="giftcard-amount" id="giftcardAmount">100&euro;</span>
+            </div>
+            <div class="giftcard-card-bottom">
+              <div class="giftcard-field">
+                <span class="giftcard-field-label" data-i18n="giftcard.card.for">Para</span>
+                <span class="giftcard-field-value" id="giftcardFor">&mdash;</span>
+              </div>
+              <div class="giftcard-field giftcard-field-right">
+                <span class="giftcard-field-label" data-i18n="giftcard.card.from">De</span>
+                <span class="giftcard-field-value" id="giftcardFrom">&mdash;</span>
+              </div>
+            </div>
+            <span class="giftcard-card-brand">El Pinar &middot; Isla de El Hierro</span>
+          </div>
+          <p class="giftcard-note" data-i18n="giftcard.note">Sin caducidad. Canjeable en cualquiera de nuestros apartamentos.</p>
+        </div>
+
+        <!-- Configurator -->
+        <form class="giftcard-form" id="giftcardForm">
+          <fieldset class="giftcard-group">
+            <legend class="giftcard-group-label" data-i18n="giftcard.amount.label">Elige el importe</legend>
+            <div class="giftcard-amounts" id="giftcardAmounts">
+              <button type="button" class="giftcard-amount-btn" data-amount="50">50&euro;</button>
+              <button type="button" class="giftcard-amount-btn active" data-amount="100">100&euro;</button>
+              <button type="button" class="giftcard-amount-btn" data-amount="150">150&euro;</button>
+              <button type="button" class="giftcard-amount-btn" data-amount="250">250&euro;</button>
+              <button type="button" class="giftcard-amount-btn giftcard-amount-custom" data-amount="custom" data-i18n="giftcard.amount.custom">Otro</button>
+            </div>
+            <div class="giftcard-custom-wrap" id="giftcardCustomWrap" hidden>
+              <span class="giftcard-currency">&euro;</span>
+              <input type="number" id="giftcardCustom" min="20" step="10" inputmode="numeric" placeholder="0" aria-label="Importe personalizado">
+            </div>
+          </fieldset>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="giftFor" data-i18n="giftcard.form.for">Para (nombre)</label>
+              <input type="text" id="giftFor" name="giftFor" autocomplete="off" maxlength="24">
+            </div>
+            <div class="form-group">
+              <label for="giftFrom" data-i18n="giftcard.form.from">De (tu nombre)</label>
+              <input type="text" id="giftFrom" name="giftFrom" autocomplete="name" maxlength="24">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="giftEmail" data-i18n="giftcard.form.email">Tu email</label>
+            <input type="email" id="giftEmail" name="giftEmail" autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="giftMessage" data-i18n="giftcard.form.message">Dedicatoria (opcional)</label>
+            <textarea id="giftMessage" name="giftMessage" rows="3" maxlength="200"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg" data-i18n="giftcard.form.submit">Solicitar por WhatsApp</button>
+          <p class="giftcard-form-hint" data-i18n="giftcard.form.hint">Te confirmaremos la disponibilidad y el modo de pago por WhatsApp.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- About Section -->
   <section id="about" class="section about-section">
     <div class="container">
@@ -735,6 +819,6 @@
     <div class="lightbox-thumbs" id="lightboxThumbs"></div>
   </div>
 
-  <script src="script.js?v=7"></script>
+  <script src="script.js?v=8"></script>
 </body>
 </html>

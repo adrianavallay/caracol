@@ -12,6 +12,7 @@ const translations = {
     "nav.activities": "Actividades",
     "nav.about": "Sobre Nosotros",
     "nav.contact": "Contacto",
+    "nav.giftcard": "Tarjeta Regalo",
     "nav.book": "Reservar",
     "hero.badge": "Reserva de la Biosfera UNESCO",
     "hero.title1": "Apartamentos Caracol",
@@ -71,6 +72,21 @@ const translations = {
     "nature.biking.desc": "Un verdadero desafío para ciclistas de montaña y entusiastas del senderismo.",
     "nature.diving": "Buceo",
     "nature.diving.desc": "Aguas cristalinas ideales para explorar la vida marina de El Hierro.",
+    "giftcard.tag": "Regala una experiencia",
+    "giftcard.title": "Tarjeta Regalo",
+    "giftcard.subtitle": "Regala una estancia inolvidable en El Hierro. Elige un importe, personaliza tu mensaje y nosotros nos encargamos del resto.",
+    "giftcard.card.label": "Tarjeta Regalo",
+    "giftcard.card.for": "Para",
+    "giftcard.card.from": "De",
+    "giftcard.note": "Sin caducidad. Canjeable en cualquiera de nuestros apartamentos.",
+    "giftcard.amount.label": "Elige el importe",
+    "giftcard.amount.custom": "Otro",
+    "giftcard.form.for": "Para (nombre)",
+    "giftcard.form.from": "De (tu nombre)",
+    "giftcard.form.email": "Tu email",
+    "giftcard.form.message": "Dedicatoria (opcional)",
+    "giftcard.form.submit": "Solicitar por WhatsApp",
+    "giftcard.form.hint": "Te confirmaremos la disponibilidad y el modo de pago por WhatsApp.",
     "about.tag": "Nuestra Historia",
     "about.title": "Bienvenidos a Caracol El Hierro",
     "about.text1": "Hola, me llamo Pablo. Mis padres me trajeron desde Alemania a esta maravillosa isla en 1982 cuando tenía un año. Tras estudiar psicología y seguridad laboral, regresé en 2010.",
@@ -109,6 +125,7 @@ const translations = {
     "nav.activities": "Activities",
     "nav.about": "About Us",
     "nav.contact": "Contact",
+    "nav.giftcard": "Gift Card",
     "nav.book": "Book Now",
     "hero.badge": "UNESCO Biosphere Reserve",
     "hero.title1": "Caracol Apartments",
@@ -168,6 +185,21 @@ const translations = {
     "nature.biking.desc": "A real challenge for mountain bikers and hiking enthusiasts.",
     "nature.diving": "Diving",
     "nature.diving.desc": "Crystal clear waters ideal for exploring the marine life of El Hierro.",
+    "giftcard.tag": "Gift an experience",
+    "giftcard.title": "Gift Card",
+    "giftcard.subtitle": "Give the gift of an unforgettable stay in El Hierro. Choose an amount, personalise your message and we'll take care of the rest.",
+    "giftcard.card.label": "Gift Card",
+    "giftcard.card.for": "To",
+    "giftcard.card.from": "From",
+    "giftcard.note": "No expiry date. Redeemable at any of our apartments.",
+    "giftcard.amount.label": "Choose the amount",
+    "giftcard.amount.custom": "Other",
+    "giftcard.form.for": "To (name)",
+    "giftcard.form.from": "From (your name)",
+    "giftcard.form.email": "Your email",
+    "giftcard.form.message": "Message (optional)",
+    "giftcard.form.submit": "Request via WhatsApp",
+    "giftcard.form.hint": "We'll confirm availability and payment details via WhatsApp.",
     "about.tag": "Our Story",
     "about.title": "Welcome to Caracol El Hierro",
     "about.text1": "Hello, my name is Pablo. My parents brought me from Germany to this wonderful island in 1982 when I was one year old. After studying psychology and occupational safety, I returned in 2010.",
@@ -206,6 +238,7 @@ const translations = {
     "nav.activities": "Aktivitäten",
     "nav.about": "Über Uns",
     "nav.contact": "Kontakt",
+    "nav.giftcard": "Geschenkkarte",
     "nav.book": "Buchen",
     "hero.badge": "UNESCO-Biosphärenreservat",
     "hero.title1": "Caracol Wohnungen",
@@ -265,6 +298,21 @@ const translations = {
     "nature.biking.desc": "Eine echte Herausforderung für Mountainbiker und Wanderfreunde.",
     "nature.diving": "Tauchen",
     "nature.diving.desc": "Kristallklares Wasser, ideal um die Unterwasserwelt von El Hierro zu erkunden.",
+    "giftcard.tag": "Verschenke ein Erlebnis",
+    "giftcard.title": "Geschenkkarte",
+    "giftcard.subtitle": "Verschenken Sie einen unvergesslichen Aufenthalt auf El Hierro. Wählen Sie einen Betrag, personalisieren Sie Ihre Nachricht und wir kümmern uns um den Rest.",
+    "giftcard.card.label": "Geschenkkarte",
+    "giftcard.card.for": "Für",
+    "giftcard.card.from": "Von",
+    "giftcard.note": "Kein Ablaufdatum. Einlösbar in allen unseren Wohnungen.",
+    "giftcard.amount.label": "Betrag wählen",
+    "giftcard.amount.custom": "Andere",
+    "giftcard.form.for": "Für (Name)",
+    "giftcard.form.from": "Von (Ihr Name)",
+    "giftcard.form.email": "Ihre E-Mail",
+    "giftcard.form.message": "Widmung (optional)",
+    "giftcard.form.submit": "Per WhatsApp anfragen",
+    "giftcard.form.hint": "Wir bestätigen Verfügbarkeit und Zahlung per WhatsApp.",
     "about.tag": "Unsere Geschichte",
     "about.title": "Willkommen bei Caracol El Hierro",
     "about.text1": "Hallo, mein Name ist Pablo. Meine Eltern brachten mich 1982 aus Deutschland auf diese wunderbare Insel, als ich ein Jahr alt war. Nach dem Studium der Psychologie und Arbeitssicherheit kehrte ich 2010 zurück.",
@@ -416,6 +464,8 @@ function initScrollReveal() {
     { selector: '.nature-strip', cls: 'stagger-children' },
     { selector: '.transport-grid', cls: 'stagger-children' },
     { selector: '.apartments-grid', cls: 'stagger-children' },
+    { selector: '.giftcard-preview-wrap', cls: 'reveal-left' },
+    { selector: '.giftcard-form', cls: 'reveal-right' },
   ];
 
   revealElements.forEach(({ selector, cls }) => {
@@ -611,6 +661,109 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowLeft') lightboxPrev();
   if (e.key === 'ArrowRight') lightboxNext();
 });
+
+// ─── Gift Card ───
+const giftcardForm = document.getElementById('giftcardForm');
+if (giftcardForm) {
+  const amountBtns = document.querySelectorAll('.giftcard-amount-btn');
+  const customWrap = document.getElementById('giftcardCustomWrap');
+  const customInput = document.getElementById('giftcardCustom');
+  const previewAmount = document.getElementById('giftcardAmount');
+  const previewFor = document.getElementById('giftcardFor');
+  const previewFrom = document.getElementById('giftcardFrom');
+  const giftFor = document.getElementById('giftFor');
+  const giftFrom = document.getElementById('giftFrom');
+
+  let selectedAmount = 100; // default
+
+  const getAmount = () => {
+    const active = document.querySelector('.giftcard-amount-btn.active');
+    if (active && active.dataset.amount === 'custom') {
+      const val = parseInt(customInput.value, 10);
+      return val > 0 ? val : 0;
+    }
+    return selectedAmount;
+  };
+
+  const renderAmount = () => {
+    const amount = getAmount();
+    previewAmount.textContent = amount > 0 ? `${amount}€` : '—';
+  };
+
+  amountBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      amountBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const isCustom = btn.dataset.amount === 'custom';
+      customWrap.hidden = !isCustom;
+      if (isCustom) {
+        customInput.focus();
+      } else {
+        selectedAmount = parseInt(btn.dataset.amount, 10);
+      }
+      renderAmount();
+    });
+  });
+
+  customInput.addEventListener('input', renderAmount);
+
+  giftFor.addEventListener('input', () => {
+    previewFor.textContent = giftFor.value.trim() || '—';
+  });
+  giftFrom.addEventListener('input', () => {
+    previewFrom.textContent = giftFrom.value.trim() || '—';
+  });
+
+  giftcardForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const amount = getAmount();
+    if (!amount) {
+      customInput.focus();
+      return;
+    }
+    const to = giftFor.value.trim();
+    const from = giftFrom.value.trim();
+    const email = document.getElementById('giftEmail').value.trim();
+    const dedication = document.getElementById('giftMessage').value.trim();
+
+    const t = {
+      es: {
+        intro: '¡Hola! Quiero regalar una Tarjeta Regalo de Caracol El Hierro.',
+        amount: 'Importe', to: 'Para', from: 'De', dedication: 'Dedicatoria', email: 'Email', sent: '¡Enviado!'
+      },
+      en: {
+        intro: "Hello! I'd like to give a Caracol El Hierro Gift Card.",
+        amount: 'Amount', to: 'To', from: 'From', dedication: 'Message', email: 'Email', sent: 'Sent!'
+      },
+      de: {
+        intro: 'Hallo! Ich möchte eine Geschenkkarte von Caracol El Hierro verschenken.',
+        amount: 'Betrag', to: 'Für', from: 'Von', dedication: 'Widmung', email: 'E-Mail', sent: 'Gesendet!'
+      }
+    }[currentLang] || {};
+
+    let msg = `${t.intro}\n`;
+    msg += `\n${t.amount}: ${amount}€`;
+    if (to) msg += `\n${t.to}: ${to}`;
+    if (from) msg += `\n${t.from}: ${from}`;
+    if (dedication) msg += `\n${t.dedication}: ${dedication}`;
+    if (email) msg += `\n${t.email}: ${email}`;
+
+    const waUrl = `https://wa.me/34669816250?text=${encodeURIComponent(msg)}`;
+    window.open(waUrl, '_blank');
+
+    const submitBtn = giftcardForm.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = t.sent || 'OK';
+    submitBtn.style.background = '#059669';
+    setTimeout(() => {
+      submitBtn.textContent = originalText;
+      submitBtn.style.background = '';
+    }, 3000);
+  });
+
+  // Initialise preview
+  renderAmount();
+}
 
 // Touch swipe for lightbox
 let touchStartX = 0;

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://elcaracol.es/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://elcaracol.es/assets/img/laisla-6-scaled-1-1067x800.jpg</image:loc>
+      <image:caption>Vistas al mar desde Apartamentos Caracol en El Pinar, El Hierro</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://elcaracol.es/assets/img/elcaracol1-3-scaled-1-1067x800.jpg</image:loc>
+      <image:caption>Apartamento Caracol 1 - Vista principal</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://elcaracol.es/assets/img/elcaracol3-1-scaled-1-1067x800.jpg</image:loc>
+      <image:caption>Apartamento Caracol 3 - Vista principal</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://elcaracol.es/assets/img/elcaracol4-3-scaled-1-1067x800.jpg</image:loc>
+      <image:caption>Apartamento Caracol 4 - Vista principal</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://elcaracol.es/assets/img/elcaracol5-2-scaled-1-1067x800.jpg</image:loc>
+      <image:caption>Apartamento Caracol 5 - Vista principal</image:caption>
+    </image:image>
+  </url>
+</urlset>

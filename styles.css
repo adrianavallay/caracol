@@ -1342,7 +1342,7 @@ button {
   margin-bottom: var(--space-md);
 }
 
-.nature-item h4 {
+.nature-item h3 {
   font-family: var(--font-heading);
   font-size: 1.35rem;
   font-weight: 600;
@@ -1583,7 +1583,7 @@ button {
 }
 
 /* Transport links inside contact */
-.contact-transport h4 {
+.contact-transport h3 {
   font-family: var(--font-heading);
   font-size: 1.15rem;
   font-weight: 600;

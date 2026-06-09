@@ -32,13 +32,15 @@ const translations = {
     "apartments.tag": "Alojamiento",
     "apartments.title": "Nuestros Apartamentos",
     "apartments.subtitle": "En esta sección encontrará fotos e información sobre nuestros apartamentos. Cada uno ofrece vistas al mar, terraza privada y todo lo necesario para una estancia perfecta.",
-    "apartments.desc": "Estudio con vistas al mar y una terraza íntima. Cocina, baño con agua caliente solar, WiFi y terraza con amplias vistas al mar y las montañas.",
+    "apartments.desc": "Casa de vacaciones tipo estudio con vistas al mar y una terraza muy íntima. El piso tiene una cocina, un cuarto de baño (agua caliente con energía solar), una lavadora comunitaria, acceso a Internet Wi-Fi y una terraza con amplias vistas al mar y a las montañas. Es fresco en verano y cálido en invierno.",
     "apartments.guests": "huéspedes",
     "apartments.bedroom": "dormitorio",
     "apartments.bathroom": "baño",
     "apartments.book": "Consultar Disponibilidad",
     "apartments.checkin": "Desde las 15:00",
     "apartments.checkout": "Hasta las 12:00",
+    "apartments.flex": "Flexibilidad:",
+    "apartments.flexcheckin": "Llegada temprana o salida tardía bajo consulta",
     "amenities.title": "Lo que incluimos",
     "amenities.wifi": "WiFi",
     "amenities.kitchen": "Cocina",
@@ -48,6 +50,14 @@ const translations = {
     "amenities.coffee": "Cafetera",
     "amenities.towels": "Toallas y ropa de cama",
     "amenities.washer": "Lavadora",
+    "amenities.dryer": "Secadora",
+    "amenities.iron": "Plancha",
+    "amenities.hairdryer": "Secador de pelo",
+    "amenities.crib": "Cuna y trona",
+    "amenities.toiletries": "Jabón y papel higiénico",
+    "amenities.shampoo": "Champú",
+    "amenities.hangers": "Percheros",
+    "amenities.luggage": "Guardería de Equipaje",
     "activities.tag": "Experiencia",
     "activities.title": "El Vino",
     "activities.text": "Nuestro viñedo está situado al pie de los llanos. Las uvas se recogen, estrujan y maceran según los métodos tradicionales canarios. El «vino de pata de cabra» reposa en sus barricas en la bodega y le invita a degustarlo.",
@@ -119,13 +129,15 @@ const translations = {
     "apartments.tag": "Accommodation",
     "apartments.title": "Our Apartments",
     "apartments.subtitle": "In this section you will find photos and information about our apartments. Each one offers sea views, a private terrace and everything you need for a perfect stay.",
-    "apartments.desc": "Studio with sea views and an intimate terrace. Kitchen, bathroom with solar hot water, WiFi and terrace with panoramic views of the sea and mountains.",
+    "apartments.desc": "Studio-style holiday house with sea views and a very intimate terrace. The apartment has a kitchen, a bathroom (solar-heated hot water), a communal washing machine, Wi-Fi Internet access and a terrace with sweeping views of the sea and mountains. Cool in summer and warm in winter.",
     "apartments.guests": "guests",
     "apartments.bedroom": "bedroom",
     "apartments.bathroom": "bathroom",
     "apartments.book": "Check Availability",
     "apartments.checkin": "From 3:00 PM",
     "apartments.checkout": "Until 12:00 PM",
+    "apartments.flex": "Flexibility:",
+    "apartments.flexcheckin": "Early check-in or late check-out on request",
     "amenities.title": "What We Include",
     "amenities.wifi": "WiFi",
     "amenities.kitchen": "Kitchen",
@@ -135,6 +147,14 @@ const translations = {
     "amenities.coffee": "Coffee Machine",
     "amenities.towels": "Towels & Linens",
     "amenities.washer": "Washing Machine",
+    "amenities.dryer": "Dryer",
+    "amenities.iron": "Iron",
+    "amenities.hairdryer": "Hair Dryer",
+    "amenities.crib": "Crib & High Chair",
+    "amenities.toiletries": "Soap & Toilet Paper",
+    "amenities.shampoo": "Shampoo",
+    "amenities.hangers": "Hangers",
+    "amenities.luggage": "Luggage Storage",
     "activities.tag": "Experience",
     "activities.title": "The Wine",
     "activities.text": "Our vineyard is situated at the foot of the plains. The grapes are harvested, crushed and macerated using traditional Canarian methods. The \"goat's foot wine\" rests in its barrels in the cellar and invites you to taste it.",
@@ -206,13 +226,15 @@ const translations = {
     "apartments.tag": "Unterkunft",
     "apartments.title": "Unsere Wohnungen",
     "apartments.subtitle": "In diesem Bereich finden Sie Fotos und Informationen über unsere Wohnungen. Jede bietet Meerblick, eine private Terrasse und alles, was Sie für einen perfekten Aufenthalt brauchen.",
-    "apartments.desc": "Studio mit Meerblick und einer sehr intimen Terrasse. Küche, Bad mit Solar-Warmwasser, WiFi und Terrasse mit weitem Blick auf das Meer und die Berge.",
+    "apartments.desc": "Studio-Ferienhaus mit Meerblick und einer sehr intimen Terrasse. Die Wohnung verfügt über eine Küche, ein Bad (Warmwasser durch Solarenergie), eine gemeinschaftliche Waschmaschine, WLAN-Internetzugang und eine Terrasse mit weitem Blick auf das Meer und die Berge. Im Sommer kühl, im Winter warm.",
     "apartments.guests": "Gäste",
     "apartments.bedroom": "Schlafzimmer",
     "apartments.bathroom": "Badezimmer",
     "apartments.book": "Verfügbarkeit Prüfen",
     "apartments.checkin": "Ab 15:00 Uhr",
     "apartments.checkout": "Bis 12:00 Uhr",
+    "apartments.flex": "Flexibilität:",
+    "apartments.flexcheckin": "Frühe Anreise oder späte Abreise auf Anfrage",
     "amenities.title": "Was wir bieten",
     "amenities.wifi": "WLAN",
     "amenities.kitchen": "Küche",
@@ -222,6 +244,14 @@ const translations = {
     "amenities.coffee": "Kaffeemaschine",
     "amenities.towels": "Handtücher & Bettwäsche",
     "amenities.washer": "Waschmaschine",
+    "amenities.dryer": "Trockner",
+    "amenities.iron": "Bügeleisen",
+    "amenities.hairdryer": "Föhn",
+    "amenities.crib": "Kinderbett & Hochstuhl",
+    "amenities.toiletries": "Seife & Toilettenpapier",
+    "amenities.shampoo": "Shampoo",
+    "amenities.hangers": "Kleiderbügel",
+    "amenities.luggage": "Gepäckaufbewahrung",
     "activities.tag": "Erlebnis",
     "activities.title": "Der Wein",
     "activities.text": "Unser Weinberg liegt am Fuße der Ebene. Die Trauben werden nach traditionellen kanarischen Methoden geerntet, gepresst und mazeriert. Der «Ziegenfußwein» ruht in seinen Fässern im Keller und lädt Sie zur Verkostung ein.",
@@ -347,17 +377,6 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
   });
 });
 
-// ─── Hero Slider ───
-const slides = document.querySelectorAll('.hero-slide');
-let currentSlide = 0;
-
-function nextSlide() {
-  slides[currentSlide].classList.remove('active');
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].classList.add('active');
-}
-
-setInterval(nextSlide, 6000);
 
 // ─── Active nav link on scroll ───
 const sections = document.querySelectorAll('section[id]');

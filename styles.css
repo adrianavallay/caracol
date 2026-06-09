@@ -279,11 +279,12 @@ button {
   height: 32px;
   width: auto;
   object-fit: contain;
+  filter: brightness(0) invert(1);
   transition: filter var(--transition-base);
 }
 
 .navbar.scrolled .nav-logo img {
-  filter: brightness(0);
+  filter: none;
 }
 
 .logo-text {
